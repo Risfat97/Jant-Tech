@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Public Sans', 'Courier New', Courier, monospace;
+}
+
+body{
+    font-size: 1rem;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.link-section:hover{
+    text-decoration: underline;
+}
+
+div.jant-container{
+    width: 100vw;
+    height: calc(100vh - 62px);
+    background-image: url('../img/slide-jant/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-name: slideImg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slideImg{
+    0%{
+        background-image: url('../img/slide-jant/1.png');
+    }
+
+    33%{
+        background-image: url('../img/slide-jant/1.png');
+    }
+
+    66%{
+        background-image: url('../img/slide-jant/2.png');
+    }
+
+    100%{
+        background-image: url('../img/slide-jant/3.png');
+    }
+}
+
+.jant-brand{
+    font-family: "Moon Dance", 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.jant-icon{
+    color: #FFC300;
+}
+
+.text-desc-apropos{
+    opacity: .8;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-family: Oswald, 'Courier New', Courier, monospace;;
+}
+
+img.icone{
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin-right: 1.3rem;
+}
+
+#services{
+    background: #ffc300;
+}
+
+.skew-top-left{
+    background: linear-gradient(to top left, #212529 50%, #fff 0);
+    height: 38px;
+    width: 100%;
+}
+
+.skew-top-right{
+    background: linear-gradient(to top right, #ffc300 50%, #fff 0);
+    height: 38px;
+    width: 100%;
+}
+
+.skew-bottom-left{
+    background: linear-gradient(to bottom left, #212529 50%, #ffc300 0);
+    height: 38px;
+    width: 100%;
+}
+
+.skew-bottom-right{
+    background: linear-gradient(to bottom right, #ffc300 50%, #fff 0);
+    height: 38px;
+    width: 100%;
+}
+
+
+
+
+
+footer.footer-jant{
+    background: linear-gradient(to bottom, rgba(255, 195, 0, .3), #FFC300);
+}
+
+.end-footer{
+    background-color: #ffbb00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px){
+    div.jant-container{
+        height: 50vh;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 1025px){
+    div.jant-container{
+        background-size: cover;
+    }
+}
