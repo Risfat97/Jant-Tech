@@ -83,7 +83,8 @@ img.icone{
     margin-right: 1.3rem;
 }
 
-#services{
+#services,
+.card-contact{
     background: #ffc300;
 }
 
