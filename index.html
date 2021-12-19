@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jant TECH est une startup basée à Dakar créée en 2020. Elle apporte des solutions en créant des applications web et/ou mobiles pour des startups, entreprises, organisations, etc.">
         <title>Jant TECH</title>
         <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
@@ -29,21 +30,15 @@
                         <a class="link-section text-dark px-2 fs-5" href="#services">Services</a>
                         <a class="link-section text-dark px-2 fs-5" href="#contact">Contact</a>
                     </div>
-                    <div class="dropdown d-flex d-md-none">
-                        <button class="btn btn-transparent text-dark" 
-                                type="button" 
-                                id="dropdownMenuButton1" 
-                                data-bs-toggle="dropdown">
-                                    <span class="material-icons">menu</span></button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li class="p-2"><a class="dropdown-item" href="#a-propos">A propos de Nous</a></li>
-                            <li class="p-2"><a class="dropdown-item" href="#services">Services</a></li>
-                            <li class="p-2"><a class="dropdown-item" href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
+                    <a class="d-block d-md-none btn-menu"><span class="material-icons text-dark">menu</span></a>
                 </div>
             </nav>
         </header>
+        <ul class="list-group dropdown-container d-none">
+            <li><a class="list-group-item" href="#a-propos">A propos de Nous</a></li>
+            <li><a class="list-group-item" href="#services">Services</a></li>
+            <li><a class="list-group-item" href="#contact">Contact</a></li>
+        </ul>
             
         <!-- Begin page content -->
         <main class="m-0">
@@ -58,7 +53,7 @@
                         alt="Objectif META">
                     <div class="col-12 offset-lg-1 col-lg-5 mt-3">                    
                         <p class="text-desc-apropos text-dark mt-4"><span class="text-warning">Jant TECH</span> est une 
-                            startup basé à Dakar. Créée en 2020 suite à un travail en groupe réalisé par les 3 fondateurs 
+                            startup basée à Dakar. Créée en 2020 suite à un travail en groupe réalisé par les 3 fondateurs 
                             sur un projet facilitant aux élèves et éventuellement aux étudiants de réviser leurs cours par 
                             une série de quiz. La startup a pour objectif d'apporter des solutions aux problèmes que rencontrent 
                             les sénégalais, d'accompagner les personnes ayant un projet à développer et aussi d'aider les entreprises 
@@ -235,7 +230,7 @@
                             <ul class="p-0">
                                 <li><a class="btn btn-link text-dark" href="#">Accueil</a></li>
                                 <li><a class="btn btn-link text-dark" href="#services">Services</a></li>
-                                <li><a class="btn btn-link text-dark" href="#a-propos">A propos <span class="d-inline d-md-none">de META<span></a></li>
+                                <li><a class="btn btn-link text-dark" href="#a-propos">A propos de Nous</a></li>
                                 <li><a class="btn btn-link text-dark" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -257,6 +252,9 @@
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+                crossorigin="anonymous"></script>
+        <script src="./assets/js/app.js"></script>
     </body>
 </html>

@@ -111,9 +111,28 @@ img.icone{
     width: 100%;
 }
 
+.dropdown-container{
+    border: 1px solid #212529;
+    border-radius: .2rem;
+    box-shadow: -2px 3px 5px rgba(33, 37, 41, .5);
+    position: fixed;
+    top: 61px;
+    left: 4vw;
+    width: 90vw;
+    animation-name: slideDown;
+    animation-duration: 1000ms;
+}
 
-
-
+@keyframes slideDown{
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    100%{
+        top: 61px;
+        opacity: 1;
+    }
+}
 
 footer.footer-jant{
     background: linear-gradient(to bottom, rgba(255, 195, 0, .5), #ffc300);
