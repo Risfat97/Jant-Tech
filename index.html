@@ -159,24 +159,27 @@
                     
                     <div class="row contact-container my-3 py-5">
                         <div class="col-12 mb-3">
-                            <form action="" method="post"></form>
+                            <form action="" method="post" id="formContact">
                                 <div class="row mb-3">
                                     <div class="col-12 col-lg-6">
-                                        <div class="form-group">
+                                        <div class="form-group mb-3">
                                             <label for="name" class="form-label text-white">Nom</label>
                                             <input type="text" class="form-control" name="name">
+                                            <small class="text-danger error err-name d-none">Le nom doit contenir au moins 2 caractères.</small>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <div class="form-group">
+                                        <div class="form-group mb-3">
                                             <label for="mail" class="form-label text-white">Email</label>
                                             <input type="email" class="form-control" name="mail">
+                                            <small class="text-danger error err-mail d-none">Le format du mail est incorrect.</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="msg" class="form-label text-white">Message</label>
                                     <textarea class="form-control" name="msg" rows="4"></textarea>
+                                    <small class="text-danger error err-msg d-none">Le message ne doit pas être vide.</small>
                                 </div>
                                 <button type="submit" class="btn btn-warning">Envoyer</button>
                             </form>
